@@ -1,0 +1,19 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories=['academy-project-faisal.base']}"></sly>
+<div class="cardAcademy">
+    <div data-sly-test="${!properties.backgroundType}" style="color:gray; text-align:center">Add the card type </div>
+    <div data-sly-test="${properties.backgroundType =='image'}" class="cardBg">
+        <sly data-sly-resource="${'backgroundImage' @resourceType='/apps/academy-project-faisal/components/content/atomic/imageBg'}" ></sly>
+    </div>
+    <div data-sly-test="${properties.backgroundType =='video'}" class="cardBg">
+        <sly data-sly-resource="${'backgroundVideo' @resourceType='/apps/academy-project-faisal/components/content/atomic/videoBg'}" ></sly>
+    </div>
+    <div>
+        <sly data-sly-resource="${'title' @resourceType='/apps/academy-project-faisal/components/content/atomic/title'}" ></sly>
+    </div>
+    <div>
+        <sly data-sly-resource="${'paragraph' @resourceType='/apps/academy-project-faisal/components/content/atomic/paragraph'}" ></sly>
+    </div>
+    <div class="btnWrapper">
+        <sly data-sly-resource="${'button' @resourceType='/apps/academy-project-faisal/components/content/atomic/button'}" ></sly>
+    </div>
+</div>

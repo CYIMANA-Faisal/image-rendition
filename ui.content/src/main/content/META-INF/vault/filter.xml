@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/academy-project-faisal" mode="merge"/>
+    <filter root="/content/academy-project-faisal" mode="merge"/>
+    <filter root="/content/dam/academy-project-faisal/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/academy-project-faisal" mode="merge"/>
+</workspaceFilter>
